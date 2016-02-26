@@ -1,0 +1,119 @@
+#principal
+{
+width:100%;
+font-size: 62.5%; /*Convertendo o tamanho padrão da fonte da página de 16px para 10px.*/
+font-family: "Helvetica Neue", "Helvetica", "Arial", "Comic-sans";
+}
+header{
+background-color:#3B4544;
+width:100%; height:70px;
+font-size:1.6em;
+}
+header img{
+	height:100%;
+	width:auto;
+	position: relative;
+	display:inline;
+	float: left;
+	left:5em;
+}
+/*Estilização Menu*/
+.menu{
+	float:right;
+}
+.menu ol{
+	list-style: none;
+	margin: 0;
+}
+.menu ol li{
+	position:relative;
+	float:left;
+	margin: 1em;
+	padding: 0.5em;
+}
+.menu abbr{text-decoration:none;}
+.menu a{padding:0.5em; border:solid 0.2em #3b4544; }
+.menu a:link{text-decoration: none; color: #88c665}
+.menu a:visited{text-decoration: none; color: #88c665}
+.menu a:hover{
+	text-decoration: none;
+	color: #d2d3d5;
+	border: groove 0.2em #d2d3d5;
+	border-radius: 0.5em;
+}
+
+
+.sub_item{
+	background: #d2d3d5;
+	border-radius: 0.3em;
+	text-align:left;
+	width: auto;
+	height:auto;
+	padding: 0.2em;
+	display:block;
+	position: relative;
+	top: 0.6em;
+	opacity: 0;
+	
+	/*Essa parte do código controla o tempo até aparecer o item na tela*/
+	        -webkit-transition: all 300ms ease;
+ -moz-transition: all 300ms ease;
+ -ms-transition: all 300ms ease;
+ -o-transition: all 300ms ease;
+ transition: all 300ms ease;
+}
+
+.item:hover   .sub_item{
+	opacity: 1;
+}
+
+.sub_item a:link{text-decoration: none; color: #000; border:none;}
+.sub_item a:visited{text-decoration: none; color: #000; border:none;}
+.sub_item a:hover{
+	text-decoration: none;
+	color: #88c665;
+	border: none;
+}
+/*Fim da Estilização do menu*/
+
+
+
+#barra
+{
+background-color:#FFFFFF; 
+width:100%; height:50px; 
+}
+
+#corpo
+{
+background-color:#FFFFFF; 
+width:100%; 
+height:450px;  
+}
+
+#rodape
+{
+background-color:#3B4544; 
+width:100%; 
+height:50px; 
+clear:both; 
+}
+
+
+@font-face{
+ font-family: 'eightone';
+ src: url('font/eightone.ttf') format('truetype'); 
+}
+
+.eightone-font{
+ font-family: 'eightone';
+}
+
+@font-face{
+ font-family: 'helveticaneue';
+ src: url('font/helveticaneue.ttf') format('truetype'); 
+}
+
+.neue-font{
+ font-family: 'helveticaneue';
+}
