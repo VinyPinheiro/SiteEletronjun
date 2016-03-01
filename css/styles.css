@@ -1,22 +1,42 @@
-html,
-body {
+html,body {
    margin:0;
    padding:0;
    height:100%;
+}
+article{
+	max-width:1024px;
+	margin:auto;
+	padding:1rem;
+}
+figure{
+	margin:0;
+	padding:0;
+}
+h1, h2, h3, h4, h5, h6{
+	color: #88c665;
+	font-weight: bold;
+	font-family: 'eightone', 'helveticaneue', 'Swis721 LtEx BT', 'Verdana', 'Century Gothic', 'Square721 BT', 'sans-serif';
+}
+h1{
+	padding:0.3rem;
+	font-size:1.8rem;
 }
 img{
 	max-width:100%;
 	height:auto;
 }
-figure{
-	margin:0;
-	padding:0;
+p{
+	font-family: /*'Helvetica',*/'Helvetica neue', 'Arial', 'Verdana', 'Trebuchet MS', 'sans-serif';
+	text-align: justify;
+  text-justify: inter-word;
+	text-indent: 2rem;
 }
 
 #container{
 	width:100%;
 	min-height:100%;
 	background-color:#fff;
+	display: table;/*O display table garante que a seção englobara também os elementos flutuantes.*/
 }
 /*Estilização Header*/
 #header{
@@ -30,7 +50,7 @@ figure{
 }
 #logo{
 	height:4rem;
-	padding-left: 2rem;
+	padding-left: 5rem;
 	width: auto;
 	float:left;
 }
@@ -99,11 +119,30 @@ figure{
 	float: left;
 }/*Fim da Estilização da Header*/
 
-
+/*Estilização do Conteúdo*/
 #content{
 	text-align: center;
 	width:100%;
 	background-color:#fff;
+	display:table;
+	padding-top: 3rem;
+	border: solid red;
+}
+.texto-principal{
+	display:table;
+}
+.texto-principal figure{
+	width: 40%;
+	height: auto;
+	float: left;
+	padding: 0.5rem;
+}
+.texto-principal p{
+	padding: 0.5rem;
+	display:inline;
+}
+.link{
+	text-align: left;
 }
 
 #footer{
@@ -160,6 +199,7 @@ figure{
 .sub-item{
 	visibility:hidden;
 }
+
 #control-nav:checked ~ nav{
 		opacity:1;
 }
@@ -192,7 +232,7 @@ figure{
 }
 
 .eightone-font{
- font-family: 'eightone';
+ font-family: 'eightone', 'helveticaneue', 'Swis721 LtEx BT', 'Verdana', 'Century Gothic', 'Square721 BT', 'sans-serif';
 }
 
 @font-face{
@@ -201,5 +241,5 @@ figure{
 }
 
 .neue-font{
- font-family: 'helveticaneue';
+ font-family: 'helveticaneue', 'Helvetica', 'Arial', 'Verdana', 'Trebuchet MS', 'sans-serif';
 }
