@@ -38,6 +38,7 @@ p{
 	background-color:#fff;
 	display: table;/*O display table garante que a seção englobara também os elementos flutuantes.*/
 }
+
 /*Estilização Header*/
 #header{
 	width:100%; 
@@ -126,23 +127,27 @@ p{
 	background-color:#fff;
 	display:table;
 	padding-top: 3rem;
-	border: solid red;
-}
-.texto-principal{
-	display:table;
-}
-.texto-principal figure{
-	width: 40%;
-	height: auto;
-	float: left;
-	padding: 0.5rem;
-}
-.texto-principal p{
-	padding: 0.5rem;
-	display:inline;
 }
 .link{
 	text-align: left;
+}
+.link img{
+	height: 1.3rem;
+	width: auto;
+	margin: 0.2rem;
+	float:left;
+}
+
+.img-left{
+	margin: 1rem;
+	width: 40%;
+	float: left;
+}
+.img-center{
+	display: block;
+	margin: auto;
+	margin-top: 1rem;
+	width: 60%;
 }
 
 #footer{
