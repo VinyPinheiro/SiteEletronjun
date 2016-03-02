@@ -2,7 +2,7 @@ html,body {
    margin:0;
    padding:0;
    min-height:100%;
-	 width:100%
+	 width:100%;
 }
 address{
 	font-style: normal;
@@ -41,9 +41,9 @@ p{
 
 #container{
 	width:100%;
-	height:100%;
 	background-color:#fff;
 	display: table;/*O display table garante que a seção englobara também os elementos flutuantes.*/
+	min-height:73.18611987%;
 }
 
 /*Estilização Header*/
@@ -131,9 +131,16 @@ p{
 #content{
 	text-align: center;
 	width:100%;
+	max-width: 1024px;
+	margin: auto;
 	background-color:#fff;
 	display:table;
-	padding-top: 3rem;
+	position:relative;
+	margin-top: 6rem;
+}
+.custom-title{
+	/*Classe para deixar parte do titulo cinza e a outra verde.*/
+	color: #3b4544;
 }
 /*Link - classe que configura os links dentro do espaço de conteúdo.*/
 .link{
@@ -176,9 +183,9 @@ p{
 #footer{
 	width:96%;
 	height:5rem;
-	position:relative;
-	bottom: 0;
 	display: table;
+	position:relative;
+	bottom:0;
 	background-color:#3b4544;
 	padding-left: 2%;
 	padding-right: 2%;
