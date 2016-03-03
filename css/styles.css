@@ -2,11 +2,12 @@ html,body {
    margin:0;
    padding:0;
    min-height:100%;
-	 width:100%;
+	 width:100%
 }
 address{
 	font-style: normal;
 	font-weight: normal;
+	
 }
 article{
 	width: 90%;
@@ -40,9 +41,9 @@ p{
 
 #container{
 	width:100%;
+	height:100%;
 	background-color:#fff;
 	display: table;/*O display table garante que a seção englobara também os elementos flutuantes.*/
-	min-height:73.18611987%;
 }
 
 /*Estilização Header*/
@@ -54,6 +55,7 @@ p{
 	display:block;
 	position:fixed;
 	top:0;
+	
 }
 #logo{
 	height:4rem;
@@ -64,6 +66,22 @@ p{
 #logo img{
 	height:4rem;
 	width: auto;
+}
+/*Estilização da propaganda*/
+#informe1
+{
+ width: 33.33%;
+ float: left;
+}
+#informe2
+{
+ width: 33.33%;
+ float: left;
+}
+#informe3
+{
+ width: 33.33%;
+ float: right;
 }
 .menu nav{
 	float:right;
@@ -130,16 +148,9 @@ p{
 #content{
 	text-align: center;
 	width:100%;
-	max-width: 1024px;
-	margin: auto;
 	background-color:#fff;
 	display:table;
-	position:relative;
-	margin-top: 6rem;
-}
-.custom-title{
-	/*Classe para deixar parte do titulo cinza e a outra verde.*/
-	color: #3b4544;
+	padding-top: 3rem;
 }
 /*Link - classe que configura os links dentro do espaço de conteúdo.*/
 .link{
@@ -182,9 +193,9 @@ p{
 #footer{
 	width:96%;
 	height:5rem;
-	display: table;
 	position:relative;
-	bottom:0;
+	bottom: 0;
+	display: table;
 	background-color:#3b4544;
 	padding-left: 2%;
 	padding-right: 2%;
