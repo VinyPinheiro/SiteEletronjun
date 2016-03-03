@@ -1,13 +1,13 @@
-
 html,body {
    margin:0;
    padding:0;
    min-height:100%;
-	 width:100%;
+	 width:100%
 }
 address{
 	font-style: normal;
 	font-weight: normal;
+	
 }
 article{
 	width: 90%;
@@ -18,9 +18,6 @@ article{
 figure{
 	margin:0;
 	padding:0;
-}
-figcaption{
-	clear: both;
 }
 h1, h2, h3, h4, h5, h6{
 	color: #88c665;
@@ -41,15 +38,12 @@ p{
   text-justify: inter-word;
 	text-indent: 2rem;
 }
-section{
-	margin:auto;
-}
 
 #container{
 	width:100%;
+	height:100%;
 	background-color:#fff;
 	display: table;/*O display table garante que a seção englobara também os elementos flutuantes.*/
-	min-height:73.18611987%;
 }
 
 /*Estilização Header*/
@@ -61,7 +55,7 @@ section{
 	display:block;
 	position:fixed;
 	top:0;
-	z-index:5;
+	
 }
 #logo{
 	height:4rem;
@@ -72,6 +66,42 @@ section{
 #logo img{
 	height:4rem;
 	width: auto;
+}
+#capa
+{
+	background-color: #FFCCFF;
+}
+/*Estilização da propaganda*/
+#informe1
+{
+ width: 33.33%;
+ float: left;
+}
+#informe2
+{
+ width: 33.33%;
+ float: left;
+}
+#informe3
+{
+ width: 33.33%;
+ float: right;
+}
+#informeEmpresa {
+width:39%;
+height:43%;
+position:absolute;
+float: left;
+top:25%;
+left:64%;
+margin-top:-50px;
+margin-left:-50px;
+/*width: 100px;
+height:100px;
+float: rigth;
+position:absolute;*/
+background-color: #000000;
+opacity: 0.7;
 }
 .menu nav{
 	float:right;
@@ -138,25 +168,10 @@ section{
 #content{
 	text-align: center;
 	width:100%;
-	max-width: 1024px;
-	margin: auto;
+	height:100%;
 	background-color:#fff;
 	display:table;
-	position:relative;
-	margin-top: 6rem;
-}
-#index{
-	text-align: center;
-	width:100%;
-	margin: auto;
-	background-color:#fff;
-	display:table;
-	position:relative;
-	margin-top: 6rem;
-}
-.custom-title{
-	/*Classe para deixar parte do titulo cinza e a outra verde.*/
-	color: #3b4544;
+	padding-top: 3rem;
 }
 /*Link - classe que configura os links dentro do espaço de conteúdo.*/
 .link{
@@ -180,7 +195,7 @@ section{
 
 /*Classes para formatação de imagens*/
 .img-left{
-	margin: 0rem;
+	margin: 1rem;
 	width: 40%;
 	float: left;
 }
@@ -196,48 +211,12 @@ section{
 	width: 60%;
 }
 
-/*Galeria de Imagens*/
-.gallery{
-	background-color: rgba(42,55,55,0.9);
-	border-radius: 1rem;
-	display:table;
-	width:100%;
-	padding: 0.5rem;
-}
-.gallery ul{
-	list-style:none;
-	max-width: 20%;
-	float:left;
-	margin:0.2rem;
-}
-.gallery img{
-	width:100px;
-	border-radius:0.5rem;
-	margin: auto;
-
-}
-.gallery iframe{
-	border:none;
-	border-radius:1rem;
-	width: 80%;
-	height:550px;
-	
-		/*Essa parte do código controla o tempo até aparecer o item na tela*/
-	        -webkit-transition: all 300ms ease;
- -moz-transition: all 300ms ease;
- -ms-transition: all 300ms ease;
- -o-transition: all 300ms ease;
- transition: all 300ms ease;
-}
-
-
-/*Rodapé*/
 #footer{
 	width:96%;
 	height:5rem;
-	display: table;
 	position:relative;
-	bottom:0;
+	bottom: 0;
+	display: table;
 	background-color:#3b4544;
 	padding-left: 2%;
 	padding-right: 2%;
@@ -384,7 +363,6 @@ section{
  font-family: 'eightone', 'helveticaneue', 'Swis721 LtEx BT', 'Verdana', 'Century Gothic', 'Square721 BT', 'sans-serif';
 }
 
-@charset “utf-8”;
 @font-face{
  font-family: 'helvetica';
  src: url('font/helvetica.ttf') format('truetype'); 
