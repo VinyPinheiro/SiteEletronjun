@@ -140,6 +140,15 @@ p{
 	position:relative;
 	margin-top: 6rem;
 }
+#index{
+	text-align: center;
+	width:100%;
+	margin: auto;
+	background-color:#fff;
+	display:table;
+	position:relative;
+	margin-top: 6rem;
+}
 .custom-title{
 	/*Classe para deixar parte do titulo cinza e a outra verde.*/
 	color: #3b4544;
