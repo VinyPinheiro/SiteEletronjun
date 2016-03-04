@@ -200,38 +200,7 @@ p{
 .banner a:hover h3 span{
 	color: #88c665;
 }
-/*Estilização da propaganda*/
-#informe1
-{
- width: 33.33%;
- float: left;
-}
-#informe2
-{
- width: 33.33%;
- float: left;
-}
-#informe3
-{
- width: 33.33%;
- float: right;
-}
-#informeEmpresa {
-width:39%;
-height:43%;
-position:absolute;
-float: left;
-top:25%;
-left:64%;
-margin-top:-50px;
-margin-left:-50px;
-/*width: 100px;
-height:100px;
-float: rigth;
-position:absolute;*/
-background-color: #000000;
-opacity: 0.7;
-}
+
 /*Link - classe que configura os links dentro do espaço de conteúdo.*/
 .link{
 	text-align: left;
@@ -279,7 +248,12 @@ opacity: 0.7;
 	right:0;
 	background-color: blue;
 }
-
+.gallery ul{
+	list-style:none;
+}
+.gallery ul li{
+	margin: 1rem;
+}
 #footer{
 	width:96%;
 	height:5rem;
