@@ -90,6 +90,9 @@ p{
 	border: groove 0.1rem #d2d3d5;
 	border-radius: 0.5rem;
 }
+menu a:visited{
+	border:none;
+}
 .item{
 	display:inline-block;
 }
@@ -144,7 +147,6 @@ p{
 .index{
 	display: table;
 	margin-top:8rem;
-	background-color:pink;
 }
 .index figure img{
 	width: 100%;
@@ -251,8 +253,12 @@ p{
 .gallery ul{
 	list-style:none;
 }
+.gallery img{
+	width: 60%;
+}
 .gallery ul li{
-	margin: 1rem;
+	margin-bottom: 3rem;
+	font-weight:bold;
 }
 #footer{
 	width:96%;
