@@ -209,6 +209,30 @@ span{
 .banner a:hover h3 span{
 	color: #88c665;
 }
+.curso{
+	margin:auto;
+	width: 90%;
+	padding: 1rem;
+	text-align: left;
+}
+.curso h2{
+	text-align:left;
+}
+.curso img{
+	float:right;
+	width:18%;
+	padding-top: 3rem;
+}
+.double-colum{
+	display:table;
+}
+.double-colum ul{
+	float:left;
+	padding-right: 5rem;
+}
+.curso li{
+	list-style-type: square;
+}
 
 /*Link - classe que configura os links dentro do espaço de conteúdo.*/
 .link{
@@ -274,6 +298,7 @@ span{
 	bottom: 0;
 	display: table;
 	background-color:#3b4544;
+	margin-top:1.5rem;
 	padding-left: 2%;
 	padding-right: 2%;
 	font-size:0.8rem;
