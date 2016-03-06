@@ -172,6 +172,19 @@ span{
 	color: #ddd;
 	font-size:0.875rem;
 }
+.projetoint{
+	max-width: 300px;
+	float: right;
+	position:absolute;
+	top: 12rem;
+	right: 6rem;
+	margin:0;
+	padding:0.5rem;
+	border-radius: 1rem;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #ddd;
+	font-size:0.875rem;
+}
 
 .index_content{
 	margin:auto;
@@ -247,9 +260,8 @@ span{
 .link a:hover{
 	color: #88c665;
 }
-
 .link-img{
-	height: 1rem;
+	height: 1.3rem;
 	width: auto;
 	margin: 0.4rem;
 	float:left;
@@ -263,6 +275,15 @@ span{
 .img-left{
 	margin: 1rem;
 	width: 40%;
+	float: left;
+}
+.leftt{
+	
+	background-color: #FF00FF;
+}
+.img-leftt{
+	margin: 1rem;
+	width: 25%;
 	float: left;
 }
 .img-right{
@@ -285,16 +306,16 @@ span{
 .gallery ul{
 	list-style:none;
 }
-/*.gallery img{
+.gallery img{
 	width: 60%;
-}*/
+}
 .gallery ul li{
 	margin-bottom: 3rem;
 	font-weight:bold;
 }
 .footer{
 	width:96%;
-	height:auto;
+	height:5rem;
 	position:relative;
 	bottom: 0;
 	display: table;
@@ -371,45 +392,17 @@ span{
 /*Adaptação screen(max-width:1024px)*/
 @media only screen and (max-width: 1023px){
 #logo{
-	padding-left:0.2rem;
-}
-.index {
-	margin-top:5rem;
+	padding-left:0;
 }
 .apresentacao{
 	position:static;
-	margin:auto;
-	float:none;
-	width: 90%;
 }
-.img-center{
-	width:100%;
-}
-.img-left{
-	float:none;
-	margin:auto;
-	width: 100%;
-}
-.img-right{
-	float:none;
-	margin:auto;
-	width: 100%;
-}
-.curso{
-
-}
-.curso img{
-	float:none;
-	margin:auto;
-	width:100%;
-	padding-top: 3rem;
-}
-.fixed{
-	position: relative;
+.projetoint{
+	position:static;
 }
 /*Menu Mobile*/
 .menu nav{
-	background-color: rgba(42,55,55,0.8);
+	background-color: rgba(42,55,55,0.7);
 	position:fixed;
 	right:0;
 	top:4rem;
@@ -418,7 +411,6 @@ span{
 	border-radius: 0 0 0 0.5rem;
 	margin:0;
 	padding:0.5rem;
-	visibility:hidden;
 	opacity:0;
 	
 		 -webkit-transition: all 300ms ease;
@@ -431,8 +423,8 @@ span{
 .item{
 	display:block;
 	width: 100%;
-	padding: 0.3rem;
-	font-size:1.3rem;
+	padding: 0.1rem;
+	font-size:1rem;
 
 }
 .item:hover{
@@ -450,14 +442,13 @@ span{
 }
 
 #control-nav:checked ~ nav{
-		visibility: visible;
 		opacity:1;
 }
 
 /*Controle do Menu*/	
 .control-nav {
     position: absolute;
-    right: 0.5rem;
+    right: 1rem;
     top: 1rem;
     display: block;
     width: 1.5rem;
