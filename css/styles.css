@@ -291,7 +291,7 @@ span{
 	margin-bottom: 3rem;
 	font-weight:bold;
 }
-#footer{
+.footer{
 	width:96%;
 	height:5rem;
 	position:relative;
@@ -304,10 +304,10 @@ span{
 	font-size:0.8rem;
 	color: #d2d3d5;
 }
-#footer p{
+.footer p{
 	text-indent: 0;
 }
-#footer a{
+.footer a{
 	color: #d2d3d5;
 	text-decoration: none;
 }
@@ -326,6 +326,11 @@ span{
 }
 .right p{
 	text-align:right;
+}
+
+.fixed{
+	position:absolute;
+	bottom:0 !important;
 }
 
 /*Check Direitos Autorais*/
