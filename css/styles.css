@@ -341,6 +341,9 @@ span{
 #logo{
 	padding-left:0;
 }
+.apresentacao{
+	position:static;
+}
 /*Menu Mobile*/
 .menu nav{
 	background-color: rgba(42,55,55,0.7);
