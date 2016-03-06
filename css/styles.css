@@ -337,7 +337,7 @@ span{
 }
 
 /*Adaptação screen(max-width:1024px)*/
-@media only screen and (max-width: 1080px){
+@media only screen and (max-width: 1023px){
 #logo{
 	padding-left:0;
 }
@@ -407,6 +407,36 @@ span{
     display: block;
     height: 0.2rem;
     background: #333;
+}
+/*rodapé*/
+.right{
+	float:left;
+	position:relative;
+	width:auto;
+	vertical-align:0;
+}
+.right p{
+	text-align: left;
+}
+
+.banner li{
+		max-width:100%;
+		margin: 1rem;
+		font-size: 0.875rem;
+}
+.banner li img{
+	float: none;
+} 
+
+.banner li{
+	float: none;
+	text-align:center;
+} 
+
+ul{
+	-webkit-margin-before:0;
+	-webkit-margin-after:0;
+	-webkit-padding-start:0;
 }
 }/*Fim da estilização Mobile*/
 
