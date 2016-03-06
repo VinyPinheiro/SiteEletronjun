@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6{
 	text-align: center;
 }
 h1{
-	padding:0.3rem;
+	margin-top: 6rem;
 	font-size:1.8rem;
 }
 img{
@@ -39,6 +39,10 @@ p{
   text-justify: inter-word;
 	text-indent: 2rem;
 	display: block;
+}
+span{
+	margin:0;
+	padding: 0;
 }
 
 #container{
@@ -142,7 +146,7 @@ menu a:visited{
 	text-align:center;
 	background-color:#fff;
 	display:table;
-	padding-top: 4rem;
+	
 }
 .index{
 	display: table;
@@ -151,6 +155,7 @@ menu a:visited{
 .index figure img{
 	width: 100%;
 }
+
 .apresentacao{
 	max-width: 500px;
 	float: right;
@@ -164,8 +169,7 @@ menu a:visited{
 	color: #ddd;
 	font-size:0.875rem;
 }
-.apresentação p{
-}
+
 .index_content{
 	margin:auto;
 	width:100%;
