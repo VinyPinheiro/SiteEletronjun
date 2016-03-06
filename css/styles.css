@@ -399,10 +399,14 @@ span{
 
 }
 .curso img{
-	float:none;
-	margin:auto;
-	width:100%;
-	padding-top: 3rem;
+	float:left;
+	height: auto;
+	width: 20%;
+	padding-top:0;
+	margin:0.3rem;
+}
+.curso li{
+	display:block;
 }
 .fixed{
 	position: relative;
