@@ -1,0 +1,27 @@
+# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+RewriteBase /
+
+#Desativar lista de diretório
+Options All -Indexes
+
+# Disable the server signature 
+ServerSignature Off
+
+# Limit bandwidth consumption
+<ifmodule mod_php5.c>
+php_value zlib.output_compression 16386
+</ifmodule>
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW ERRORPAGEID:uzebuj
+ErrorDocument 500 /erro500.html
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE uzebuj:ERRORPAGEID
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW ERRORPAGEID:eGeXer
+ErrorDocument 400 /erro400.html
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE eGeXer:ERRORPAGEID
+
+ErrorDocument 403 /erro403.html
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW ERRORPAGEID:Leveqe
+ErrorDocument 404 /erro404.html
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE Leveqe:ERRORPAGEID
