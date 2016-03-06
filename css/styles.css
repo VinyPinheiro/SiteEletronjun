@@ -88,14 +88,16 @@ span{
 	padding: 0.17rem;
 	margin:0.05rem;
 }
-
+.menu a:visited{
+	border-color: #3b4544;
+}
 .menu a:hover{
 	color: #d2d3d5;
 	border: groove 0.1rem #d2d3d5;
 	border-radius: 0.5rem;
 }
-menu a:visited{
-	border:none;
+.menu a:active{
+	border: solid 0.1rem #3b4544;
 }
 .item{
 	display:inline-block;
