@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6{
 	text-align: center;
 }
 h1{
-	padding:0.3rem;
+	margin-top: 6rem;
 	font-size:1.8rem;
 }
 img{
@@ -39,6 +39,10 @@ p{
   text-justify: inter-word;
 	text-indent: 2rem;
 	display: block;
+}
+span{
+	margin:0;
+	padding: 0;
 }
 
 #container{
@@ -84,14 +88,16 @@ p{
 	padding: 0.17rem;
 	margin:0.05rem;
 }
-
+.menu a:visited{
+	border-color: #3b4544;
+}
 .menu a:hover{
 	color: #d2d3d5;
 	border: groove 0.1rem #d2d3d5;
 	border-radius: 0.5rem;
 }
-menu a:visited{
-	border:none;
+.menu a:active{
+	border: solid 0.1rem #3b4544;
 }
 .item{
 	display:inline-block;
@@ -142,7 +148,7 @@ menu a:visited{
 	text-align:center;
 	background-color:#fff;
 	display:table;
-	padding-top: 4rem;
+	
 }
 .index{
 	display: table;
@@ -151,6 +157,7 @@ menu a:visited{
 .index figure img{
 	width: 100%;
 }
+
 .apresentacao{
 	max-width: 500px;
 	float: right;
@@ -164,8 +171,7 @@ menu a:visited{
 	color: #ddd;
 	font-size:0.875rem;
 }
-.apresentação p{
-}
+
 .index_content{
 	margin:auto;
 	width:100%;
@@ -329,7 +335,6 @@ menu a:visited{
 	float:left;
 	display:inline;
 }
-
 
 /*Adaptação screen(max-width:1024px)*/
 @media only screen and (max-width: 1080px){
