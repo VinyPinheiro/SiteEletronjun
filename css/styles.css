@@ -340,9 +340,15 @@ span{
 .left{
 	float:left;
 }
+.footer .left{
+	max-width: 50%
+}
 .right{
 	float:right;
 	width:auto;
+}
+.footer .right{
+	max-width: 40%;
 }
 .right a{
 	vertical-align: -35%;
@@ -367,7 +373,6 @@ span{
 .autoria p{
 	padding-bottom: 0.5rem;
 	font-size: 0.7rem;
-	max-width: 50%;
 	opacity: 0;
 	
 	        -webkit-transition: all 300ms ease;
