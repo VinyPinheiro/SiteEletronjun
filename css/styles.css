@@ -295,7 +295,7 @@ span{
 	display: block;
 	margin: auto;
 	margin-top: 1rem;
-	width: 100%;
+	width: 60%;
 }
 .img-legend{
 	position:absolute;
@@ -306,8 +306,8 @@ span{
 .gallery ul{
 	list-style:none;
 }
-.gallery img{
-	width: 60%;
+.gallery li img{
+	width: 100%;
 }
 .gallery ul li{
 	margin-bottom: 3rem;
@@ -552,6 +552,10 @@ ul{
 .parceiros{
 	padding-top:4em;
 	width:50%;
+}
+
+.gallery img{
+	width: 100%;
 }
 
 }/*Fim da estilização Mobile*/

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://eletronjun.com.br/</loc>
+  <lastmod>2016-03-07T02:15:32+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://eletronjun.com.br/index.html</loc>
+  <lastmod>2016-03-07T02:15:32+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://eletronjun.com.br/mej.html</loc>
+  <lastmod>2016-03-07T02:15:33+00:00</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://eletronjun.com.br/historia.html</loc>
+  <lastmod>2016-03-07T02:15:32+00:00</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://eletronjun.com.br/parceirias.html</loc>
+  <lastmod>2016-03-07T02:15:33+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://eletronjun.com.br/projetos.html</loc>
+  <lastmod>2016-03-07T02:15:34+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://eletronjun.com.br/cursos.html</loc>
+  <lastmod>2016-03-07T02:15:28+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://eletronjun.com.br/eletronday.html</loc>
+  <lastmod>2016-03-07T02:15:29+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://eletronjun.com.br/eletronday1.html</loc>
+  <lastmod>2016-03-07T02:15:29+00:00</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://eletronjun.com.br/eletronday2.html</loc>
+  <lastmod>2016-03-07T02:15:30+00:00</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://eletronjun.com.br/pseletivo.html</loc>
+  <lastmod>2016-03-07T02:15:34+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://eletronjun.com.br/pseletivo_15.html</loc>
+  <lastmod>2016-03-07T02:15:34+00:00</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://eletronjun.com.br/etron.html</loc>
+  <lastmod>2016-03-07T02:15:31+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://eletronjun.com.br/file/EJ_Processo_Seletivo_2015.pdf</loc>
+  <lastmod>2016-03-07T02:15:44+00:00</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.64</priority>
+</url>
+</urlset>
