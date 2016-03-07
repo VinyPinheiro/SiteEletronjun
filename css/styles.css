@@ -340,15 +340,9 @@ span{
 .left{
 	float:left;
 }
-.footer .left{
-	max-width: 50%
-}
 .right{
 	float:right;
 	width:auto;
-}
-.footer .right{
-	max-width: 40%;
 }
 .right a{
 	vertical-align: -35%;
