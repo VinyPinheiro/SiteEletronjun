@@ -279,7 +279,6 @@ span{
 	float: left;
 }
 .leftt{
-	
 	background-color: #FF00FF;
 }
 .img-leftt{
@@ -296,7 +295,7 @@ span{
 	display: block;
 	margin: auto;
 	margin-top: 1rem;
-	width: 60%;
+	width: 100%;
 }
 .img-legend{
 	position:absolute;
