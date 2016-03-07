@@ -546,6 +546,12 @@ ul{
 	-webkit-margin-after:0;
 	-webkit-padding-start:0;
 }
+
+.parceiros{
+	padding-top:4em;
+	width:50%;
+}
+
 }/*Fim da estilização Mobile*/
 
 /*Declaração de fontes e classes para as mesmas*/
