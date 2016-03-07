@@ -283,7 +283,7 @@ span{
 	background-color: #FF00FF;
 }
 .img-leftt{
-	margin: 1rem;
+	margin-right: 1rem;
 	width: 25%;
 	float: left;
 }
@@ -393,16 +393,28 @@ span{
 /*Adaptação screen(max-width:1024px)*/
 @media only screen and (max-width: 1023px){
 #logo{
-	padding-left:0;
+	padding-left:0.2rem;
+}
+.index{
+	margin-top: 5rem;
 }
 .apresentacao{
 	position:static;
+	float:none;
+	width: 90%;
+	margin:auto;
 }
 .img-center{
 	width:100%;
 }
 .img-left{
 	float:none;
+	margin:auto;
+	width: 100%;
+}
+.img-leftt{
+	float:none;
+	margin-right:auto;
 	margin:auto;
 	width: 100%;
 }
@@ -427,6 +439,9 @@ span{
 }
 .projetoint{
 	position:static;
+	float:none;
+	width: 90%;
+	margin:auto;	
 }
 /*Menu Mobile*/
 .menu nav{
@@ -439,6 +454,7 @@ span{
 	border-radius: 0 0 0 0.5rem;
 	margin:0;
 	padding:0.5rem;
+	visibility:hidden;
 	opacity:0;
 	
 		 -webkit-transition: all 300ms ease;
@@ -451,8 +467,8 @@ span{
 .item{
 	display:block;
 	width: 100%;
-	padding: 0.1rem;
-	font-size:1rem;
+	padding: 0.3rem;
+	font-size:1.5rem;
 
 }
 .item:hover{
@@ -470,13 +486,14 @@ span{
 }
 
 #control-nav:checked ~ nav{
+		visibility:visible;
 		opacity:1;
 }
 
 /*Controle do Menu*/	
 .control-nav {
     position: absolute;
-    right: 1rem;
+    right: 0.5rem;
     top: 1rem;
     display: block;
     width: 1.5rem;
