@@ -2,13 +2,13 @@
  * FileName: Scrpt.sql
  * Description: Script creation of the entities in the database
 */
-/*drop database if exists u762355983_ejdb;
+drop database if exists u762355983_ejdb;
 create database u762355983_ejdb;
 use u762355983_ejdb;
 
 CREATE USER u762355983_proje IDENTIFIED BY '!gama!';
 GRANT ALL ON u762355983_ejdb.* TO u762355983_proje;
-*/
+
 CREATE TABLE OFFICE
 (
 	code INT NOT NULL,
@@ -31,7 +31,7 @@ CREATE TABLE ADDRESS
 	cidade  VARCHAR(50) NOT NULL,
 	estado  VARCHAR(2) NOT NULL,
 	complemento  VARCHAR(50) NULL,
-	PRIMARY KEY directorate_pk (code)
+	PRIMARY KEY address_pk (code)
 	
 ) ENGINE=InnoDB CHARSET=utf8;
 
