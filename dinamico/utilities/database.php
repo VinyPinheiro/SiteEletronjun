@@ -24,8 +24,13 @@ class Database{
 		
 		$this->connection = new mysqli ($this->host, $this->user, $this->password, $this->database);
 		
-		if(mysqli_connect_errno())
+		if(mysqli_connect_errno()){
 			throw new DatabaseException("Connection failed", 1);
+			return false;
+		}
+		
+		else
+			return true;
 	}
 	
 	public function query($query){
