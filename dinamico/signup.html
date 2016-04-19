@@ -15,14 +15,14 @@
 <body>
 		<form id="register" name="register" onSubmit="authenticate()">
 			
-			<fieldset>
+			<fieldset onblur="enable_directorate()">
 				<legend>Cargo</legend>
-				<input type = "radio" name = "code_office" id = "code_office" value="1">Presidente<br>
-				<input type = "radio" name = "code_office" id = "code_office" value="2">Diretor<br>
-				<input type = "radio" name = "code_office" id = "code_office" value="3">Gerente<br>
-				<input type = "radio" name = "code_office" id = "code_office" value="4">Acessor<br>
-				<input type = "radio" name = "code_office" id = "code_office" value="5">Trainne<br>
-				<input type = "radio" name = "code_office" id = "code_office" value="6">Colaborador<br>
+				<input type = "radio" name = "code_office" value="1" onclick="disable_directorate();">Presidente<br>
+				<input type = "radio" name = "code_office" value="2" onclick="disable_directorate();">Diretor<br>
+				<input type = "radio" name = "code_office" value="3" onclick="disable_directorate();">Gerente<br>
+				<input type = "radio" name = "code_office" value="4" onclick="disable_directorate();">Acessor<br>
+				<input type = "radio" name = "code_office" value="5" onclick="disable_directorate();">Trainne<br>
+				<input type = "radio" name = "code_office" value="6" onclick="disable_directorate();">Colaborador<br>
 			</fieldset>
 			
 			<fieldset>
@@ -57,7 +57,7 @@
 				<input type = "text" name = "phone" id = "phone" maxlength = ""><br><br>
 				
 				<label>E-mail:</label>
-				<input type = "text" name = "email" id = "email" maxlength = "150" onblur="validate_email(register.email)"><br><br>
+				<input type = "text" name = "email" id = "email" maxlength = "150" onblur="validate_email(email)"><br><br>
 				
 				<label>Confirmação de E-mail:</label>
 				<input type = "text" name = "confirmation_email" id = "confirmation_email" maxlength = "150" onblur="confirm_email()"><br><br>
