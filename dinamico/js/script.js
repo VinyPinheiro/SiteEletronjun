@@ -12,8 +12,9 @@ function verifyLoginForm()
 	}
 }
 
+/*Function to check if there are no required fields blank.*/
 function authenticate(){
-		
+	
 	var name = document.getElementById("member_name").value;
 	var nick = document.getElementById("nick").value;
 	var pass = document.getElementById("password").value;
@@ -33,6 +34,7 @@ function authenticate(){
 	var phone = document.getElementById("phone").value;
 	var index_office, checked_office, index_directorate, checked_directorate;
 
+	
 	/*Routine to check if the code_office field is selected.*/
 	checked_office = false;
 	for(index_office = 0; index_office < code_office.length; index_office++){
@@ -63,7 +65,9 @@ function authenticate(){
 	}
 		
 	else if(code_office[index_office].value != "6" && registration.length == 0){
+
 			alert("É obrigatório o preechimento da Matrícula");
+
 	}
 	
 	else if(name.length == 0 ||
@@ -77,10 +81,10 @@ function authenticate(){
 	rg.length == 0 ||
 	cpf.length == 0 ||
 	phone.length == 0 ){
+		
 		alert("Por favor, preencha todos os campos.");
 	}
 }
-
 
 function disable_directorate(){
 
@@ -88,7 +92,7 @@ function disable_directorate(){
 	var code_office = document.getElementsByName("code_office");
 	var code_directorate = document.getElementsByName("code_directorate");
 
-	if(code_office[5].checked == true || code_office[4].checked == true){
+	if(code_office[5].checked == true || code_office[4].checked == true || code_office[0].checked == true){
 		for(index = 0; index < code_directorate.length; index++){
 			code_directorate[index].disabled = 1;
 		}
@@ -99,6 +103,7 @@ function disable_directorate(){
 			code_directorate[index].disabled = 0;
 		}
 	}
+
 }	
 
 function validate_email(field){
@@ -117,6 +122,7 @@ function validate_email(field){
 	domain.lastIndexOf(".") < 1 ){
 		alert("Por favor, insira um e-mail válido.")
 	}
+
 }
 
 function confirm_email(){
@@ -132,7 +138,7 @@ function confirm_email(){
 	else if(email != confirm_email){
 		alert("Os e-mails não conferem.");
 	}
-	
+
 }
 
 function validate_pass(){
@@ -147,7 +153,7 @@ function validate_pass(){
 	else if(pass.length < 8){
 		alert("A senha deve conter no mínimo 8 caracteres.");
 	}
-	
+
 }
 
 function confirm_pass(){
@@ -164,5 +170,17 @@ function confirm_pass(){
 	}
 }
 
-
-
+function validate_registration(field){
+	
+	var year = field.value.substring(0, field.value.indexOf("/"));	
+	var code = field.value.substring(field.value.indexOf("/") + 1, field.value.length);
+	
+	if(year.length != 2 ||
+	code.length < 7 ||
+	year.search("/") != -1 ||
+	code.search("/") != -1 ||
+	isNaN(year) == true ||
+	isNaN(code) == true){
+		alert("Matrícula Invalida.");
+	}
+}

@@ -7,7 +7,32 @@
 	<meta charset="utf-8">
 
 	<script type="text/javascript" src="js/script.js"></script>
-	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+
+	<script>
+		jQuery(function($){
+
+			$("#birth_date").mask("99/99/9999");
+			$("#cpf").mask("999.999.999-99");
+			$("#cep").mask("99999-99");
+			$("#registration").mask("99/9999999")
+			
+			$('#phone').focusout(function(){
+				var phone, element;
+				element = $(this);
+				element.unmask();
+				phone = element.val().replace(/\D/g, '');
+				if(phone.length > 10) {
+				element.mask("(99) 99999-999?9");
+				} else {
+				element.mask("(99) 9999-9999?9");
+				}
+			}).trigger('focusout');
+			
+		});	
+	</script>
+
 	<title>Eletronjun</title>
 			
 </head>
@@ -51,10 +76,10 @@
 				<input type = "text" name = "cpf" id = "cpf" maxlength = "15"><br><br>
 				
 				<label>Matrícula UnB:</label>
-				<input type = "text" name = "registration" id = "registration" maxlength = "10"><br><br>
+				<input type = "text" name = "registration" id = "registration" maxlength = "10" onblur="validate_registration(registration)"><br><br>
 							
 				<label>Telefone:</label>
-				<input type = "text" name = "phone" id = "phone" maxlength = ""><br><br>
+				<input type = "text" name = "phone" id = "phone" maxlength = "15"><br><br>
 				
 				<label>E-mail:</label>
 				<input type = "text" name = "email" id = "email" maxlength = "150" onblur="validate_email(email)"><br><br>
