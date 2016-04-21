@@ -25,13 +25,11 @@ function authenticate(){
 	var rg = document.getElementById("rg").value;
 	var cpf = document.getElementById("cpf").value;
 	var registration = document.getElementById("registration").value;
+	var phone = document.getElementById("phone").value;
 	var cep = document.getElementById("cep").value;
-	var address = document.getElementById("address").value;
-	var city = document.getElementById("city").value;
-	var state = document.getElementById("state").value;
+	var house_number = document.getElementById("house_number").value;
 	var code_office = document.getElementsByName("code_office");
 	var code_directorate = document.getElementsByName("code_directorate");
-	var phone = document.getElementById("phone").value;
 	var index_office, checked_office, index_directorate, checked_directorate;
 
 	
@@ -80,7 +78,9 @@ function authenticate(){
 	birth_date.length == 0 ||
 	rg.length == 0 ||
 	cpf.length == 0 ||
-	phone.length == 0 ){
+	phone.length == 0 ||
+	cep.length == 0 ||
+	house_number.length == 0){
 		
 		alert("Por favor, preencha todos os campos.");
 	}
@@ -111,7 +111,8 @@ function validate_email(field){
 	user = field.value.substring(0, field.value.indexOf("@"));
 	domain = field.value.substring(field.value.indexOf("@") + 1, field.value.length);
 	
-	if(user.length <1 ||
+	if(confirm_email.length != 0 &&
+	(user.length <1 ||
 	domain.length < 3 ||
 	user.search("@") != -1 ||
 	domain.search("@") != -1 ||
@@ -119,7 +120,7 @@ function validate_email(field){
 	domain.search(" ") != -1 ||
 	domain.search(".") == -1 ||
 	domain.indexOf(".") < 1 ||
-	domain.lastIndexOf(".") < 1 ){
+	domain.lastIndexOf(".") < 1 )){
 		alert("Por favor, insira um e-mail válido.");
 	}
 
@@ -130,15 +131,9 @@ function confirm_email(){
 	var email = document.getElementById("email").value;
 	var confirm_email = document.getElementById("confirmation_email").value;
 	
-	
-	if(confirm_email.length == 0){
-		
-	}
-	
-	else if(email != confirm_email){
+	if(confirm_email.length != 0 && email != confirm_email){
 		alert("Os e-mails não conferem.");
 	}
-
 }
 
 function validate_pass(){
@@ -153,7 +148,6 @@ function validate_pass(){
 	else if(pass.length < 8){
 		alert("A senha deve conter no mínimo 8 caracteres.");
 	}
-
 }
 
 function confirm_pass(){
@@ -178,9 +172,7 @@ function validate_registration(field){
 	if(year.length != 2 ||
 	code.length < 7 ||
 	year.search("/") != -1 ||
-	code.search("/") != -1 ||
-	isNaN(year) == true ||
-	isNaN(code) == true){
+	code.search("/") != -1){
 		alert("Matrícula Invalida.");
 	}
 }
@@ -229,4 +221,3 @@ function validate_birthDate(field){
 		alert("Data Inválida");
 	}
 }
-
