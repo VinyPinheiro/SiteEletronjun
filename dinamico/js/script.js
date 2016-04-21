@@ -5,7 +5,7 @@ function verifyLoginForm()
 	
 	if((registration == "" || password == "")){
 		alert("Preencha todos os campos");
-		return false
+		return false;
 	}
 	else{
 		return true;
@@ -120,7 +120,7 @@ function validate_email(field){
 	domain.search(".") == -1 ||
 	domain.indexOf(".") < 1 ||
 	domain.lastIndexOf(".") < 1 ){
-		alert("Por favor, insira um e-mail válido.")
+		alert("Por favor, insira um e-mail válido.");
 	}
 
 }
@@ -184,3 +184,49 @@ function validate_registration(field){
 		alert("Matrícula Invalida.");
 	}
 }
+
+function validate_birthDate(field){
+	
+	var day = field.value.substring(0, 2);
+	var month = field.value.substring(3, 5);
+	var year = field.value.substring(6, 10);
+	
+	var birthday = new Date(year, month-1, day);
+
+	if(birthday.getTime() > new Date().getTime()){
+		alert("Data Invalida");
+	}
+	
+	else if(month < 1 || month > 12){
+		alert("Data Inválida");
+	}
+	
+	else if(month == 2){
+	
+		if(year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)){
+			if(day < 1 || day > 29){
+				alert("Data Inválida");
+			}
+		}
+		
+		else if (day < 1 || day > 28){
+			alert("Data Invalida");
+		}
+	}
+	
+	else if(month % 2 == 0){
+		
+		if(month == 8 && (day < 1 || day > 31) ){
+			alert("Data Inválida");
+		}
+		
+		else if (month != 8 && (day < 1 || day > 30) ){
+			alert("Data Inválida");
+		}
+	}
+	
+	else if(day < 1 || day > 31){
+		alert("Data Inválida");
+	}
+}
+
