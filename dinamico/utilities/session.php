@@ -26,8 +26,15 @@ class Session{
 		$data->connection();
 		$result_request = $data->consult($QUERY);
 		if(count($result_request) != 0){
-			$_SESSION["logado"] = 1;
-			echo "<script>location.href = '../administrator/'</script>";
+			if($result_request[0]['isActivity'] == "y"){
+				$_SESSION["logado"] = 1;
+				echo "<script>location.href = '../administrator/'</script>";	
+			}
+			else{
+				$_SESSION["logado"] = 0;
+				echo "<script>alert('Usuário ainda não ativo, contate a equipe de Gestão de Pessoas e Processos');</script>";
+				echo "<script>location.href = '../login.php'</script>";		
+			}
 		}
 		else{
 			$_SESSION["logado"] = 0;

@@ -9,8 +9,8 @@
 </head>
 <body>
 	<form action="utilities/initSession.php" method="POST" onSubmit="return verifyLoginForm()">
-		<label>Matrícula</label><br>
-		<input type="text" id="registration" name="registration"><br><br>
+		<label>Email</label><br>
+		<input type="text" id="email" name="email"><br><br>
 		<label>Senha</label><br>
 		<input type="password" id="password" name="password"><br><br>
 		<input type="submit" value="Login"/>
