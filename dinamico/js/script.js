@@ -15,19 +15,7 @@ function verifyLoginForm()
 /*Function to check if there are no required fields blank.*/
 function authenticate(){
 	
-	var name = document.getElementById("member_name").value;
-	var nick = document.getElementById("nick").value;
-	var pass = document.getElementById("password").value;
-	var confirmation_pass = document.getElementById("confirmation_pass").value;
-	var email = document.getElementById("email").value;
-	var confirmation_email = document.getElementById("confirmation_email").value;
-	var birth_date = document.getElementById("birth_date").value;
-	var rg = document.getElementById("rg").value;
-	var cpf = document.getElementById("cpf").value;
 	var registration = document.getElementById("registration").value;
-	var phone = document.getElementById("phone").value;
-	var cep = document.getElementById("cep").value;
-	var house_number = document.getElementById("house_number").value;
 	var code_office = document.getElementsByName("code_office");
 	var code_directorate = document.getElementsByName("code_directorate");
 	var index_office, checked_office, index_directorate, checked_directorate;
@@ -67,23 +55,6 @@ function authenticate(){
 			alert("É obrigatório o preechimento da Matrícula");
 
 	}
-	
-	else if(name.length == 0 ||
-	nick.length == 0 ||
-	pass.length == 0 ||
-	confirmation_pass.length == 0 ||
-	email.length == 0 ||
-	confirmation_email.length == 0 ||
-	pass.length == 0 ||
-	birth_date.length == 0 ||
-	rg.length == 0 ||
-	cpf.length == 0 ||
-	phone.length == 0 ||
-	cep.length == 0 ||
-	house_number.length == 0){
-		
-		alert("Por favor, preencha todos os campos.");
-	}
 }
 
 function disable_directorate(){
@@ -105,77 +76,6 @@ function disable_directorate(){
 	}
 
 }	
-
-function validate_email(field){
-
-	user = field.value.substring(0, field.value.indexOf("@"));
-	domain = field.value.substring(field.value.indexOf("@") + 1, field.value.length);
-	
-	if(confirm_email.length != 0 &&
-	(user.length <1 ||
-	domain.length < 3 ||
-	user.search("@") != -1 ||
-	domain.search("@") != -1 ||
-	user.search(" ") != -1 ||
-	domain.search(" ") != -1 ||
-	domain.search(".") == -1 ||
-	domain.indexOf(".") < 1 ||
-	domain.lastIndexOf(".") < 1 )){
-		alert("Por favor, insira um e-mail válido.");
-	}
-
-}
-
-function confirm_email(){
-	
-	var email = document.getElementById("email").value;
-	var confirm_email = document.getElementById("confirmation_email").value;
-	
-	if(confirm_email.length != 0 && email != confirm_email){
-		alert("Os e-mails não conferem.");
-	}
-}
-
-function validate_pass(){
-	
-	var pass = document.getElementById("password").value;
-	var confirm_pass = document.getElementById("confirmation_pass").value;
-	
-	if(pass.length == 0){
-		
-	}
-	
-	else if(pass.length < 8){
-		alert("A senha deve conter no mínimo 8 caracteres.");
-	}
-}
-
-function confirm_pass(){
-	
-	var pass = document.getElementById("password").value;
-	var confirm_pass = document.getElementById("confirmation_pass").value;
-	
-	if(confirm_pass.length == 0){
-		
-	}
-	
-	else if(pass != confirm_pass){
-		alert("As senhas não conferem.");
-	}
-}
-
-function validate_registration(field){
-	
-	var year = field.value.substring(0, field.value.indexOf("/"));	
-	var code = field.value.substring(field.value.indexOf("/") + 1, field.value.length);
-	
-	if(year.length != 2 ||
-	code.length < 7 ||
-	year.search("/") != -1 ||
-	code.search("/") != -1){
-		alert("Matrícula Invalida.");
-	}
-}
 
 function validate_birthDate(field){
 	
@@ -221,3 +121,83 @@ function validate_birthDate(field){
 		alert("Data Inválida");
 	}
 }
+
+/*jQuery Masked Input Plugin*/
+jQuery(function($){
+
+	$("#birth_date").mask("99/99/9999");
+	$("#cpf").mask("999.999.999-99");
+	$("#registration").mask("99/9999999")
+	
+	$('#phone').focusout(function(){
+		var phone, element;
+		element = $(this);
+		element.unmask();
+		phone = element.val().replace(/\D/g, '');
+		if(phone.length > 10) {
+		element.mask("(99) 99999-999?9");
+		} else {
+		element.mask("(99) 9999-9999?9");
+		}
+	}).trigger('focusout');
+	
+});	
+
+
+/* jQuery CEP plugin v0.2*/
+$(document).ready(function() {
+	$('#cep').cep();
+});
+
+
+/*jQuery Validation Plugin v1.15.0*/
+$(document).ready(function(){
+	$('#register').validate({
+		rules: {
+			member_name: {
+				required: true,
+			},
+			nick: {
+				required: true,
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			confirmation_email: {
+				required: true,
+				equalTo: "#email"
+			},
+			password: {
+				required: true,
+				minlength: 8
+			},
+			confirmation_pass: {
+				required: true,
+				equalTo: "#password"
+			},
+			birth_date: {
+				required: true,
+			},
+			rg: {
+				required: true,
+				number: true
+			},
+			cpf: {
+				required: true,
+			},
+			registration: {
+				required: true
+			},
+			cep: {
+				required: true
+			},
+			house_number: {
+				required: true
+			},
+			phone: {
+				required: true
+			}
+		}
+	});
+});

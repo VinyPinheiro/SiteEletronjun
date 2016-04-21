@@ -6,39 +6,11 @@
 
 	<meta charset="utf-8">
 
-	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.js"></script>
 	<script type="text/javascript" src="js/jquery.cep.js"></script>
-
-	<script>
-		jQuery(function($){
-
-			$("#birth_date").mask("99/99/9999");
-			$("#cpf").mask("999.999.999-99");
-			$("#rg").mask("9999999999999999");
-			$("#registration").mask("99/9999999")
-			
-			$('#phone').focusout(function(){
-				var phone, element;
-				element = $(this);
-				element.unmask();
-				phone = element.val().replace(/\D/g, '');
-				if(phone.length > 10) {
-				element.mask("(99) 99999-999?9");
-				} else {
-				element.mask("(99) 9999-9999?9");
-				}
-			}).trigger('focusout');
-			
-		});	
-	</script>
-	
-	<script>
-		$(document).ready(function() {
-			$('#cep').cep();
-		});
-	</script>
+	<script type="text/javascript" src="js/jquery.validate.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 
 	<title>Eletronjun</title>
 			
@@ -77,28 +49,28 @@
 				<input type="text" name="birth_date" id="birth_date" onblur="validate_birthDate(birth_date)"/><br><br>
 				
 				<label>RG:</label>
-				<input type = "text" name = "rg" id = "rg" maxlength = "9" onblur="validate_rg()"><br><br>
+				<input type = "text" name = "rg" id = "rg"><br><br>
 				
 				<label>CPF:</label>
 				<input type = "text" name = "cpf" id = "cpf" maxlength = "15"><br><br>
 				
 				<label>Matrícula UnB:</label>
-				<input type = "text" name = "registration" id = "registration" maxlength = "10" onblur="validate_registration(registration)"><br><br>
+				<input type = "text" name = "registration" id = "registration" maxlength = "10"><br><br>
 							
 				<label>Telefone:</label>
 				<input type = "text" name = "phone" id = "phone" maxlength = "15"><br><br>
 				
 				<label>E-mail:</label>
-				<input type = "text" name = "email" id = "email" maxlength = "150" onblur="validate_email(email)"><br><br>
+				<input type = "text" name = "email" id = "email" maxlength = "150"><br><br>
 				
 				<label>Confirmação de E-mail:</label>
-				<input type = "text" name = "confirmation_email" id = "confirmation_email" maxlength = "150" onblur="confirm_email()"><br><br>
+				<input type = "text" name = "confirmation_email" id = "confirmation_email" maxlength = "150"><br><br>
 				
 				<label>Senha:</label>
-				<input type = "password" name = "password" id = "password" onblur="validate_pass()"><br><br>
+				<input type = "password" name = "password" id = "password"><br><br>
 			
 				<label>Confirmação de Senha:</label>
-				<input type = "password" name = "confirmation_pass" id = "confirmation_pass" onblur="confirm_pass()"><br><br>
+				<input type = "password" name = "confirmation_pass" id = "confirmation_pass"><br><br>
 			</fieldset>
 			
 			<fieldset>
@@ -125,7 +97,7 @@
 				<input type = "text" name = "complement" id = "complement" maxlength = "200"><br><br>
 			</fieldset>
 					
-			<input type="submit" value="Enviar"/>
+			<input type="submit" value="Cadastrar"/>
 		</form>		
 </body>
 </html>
