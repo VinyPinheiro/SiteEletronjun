@@ -1,4 +1,11 @@
-﻿<!DOCTYPE html>
+﻿<!--
+*
+*	Name: singup.php
+*	Description: Registraition Form
+*
+-->
+
+<!DOCTYPE html>
 
 <html>
 
@@ -25,7 +32,7 @@
 				<input type = "radio" name = "code_office" value="2" onclick="disable_directorate();">Diretor<br>
 				<input type = "radio" name = "code_office" value="3" onclick="disable_directorate();">Gerente<br>
 				<input type = "radio" name = "code_office" value="4" onclick="disable_directorate();">Acessor<br>
-				<input type = "radio" name = "code_office" value="5" onclick="disable_directorate();">Trainne<br>
+				<input type = "radio" name = "code_office" value="5" onclick="disable_directorate();">Trainee<br>
 				<input type = "radio" name = "code_office" value="6" onclick="disable_directorate();">Colaborador<br>
 			</fieldset>
 			
@@ -56,7 +63,7 @@
 				<input type = "text" name = "rg" id = "rg"><br><br>
 				
 				<label>Orgão Emissor:</label>
-				<input type = "text" name = "rg" id = "rg" maxlength="6"><br><br>
+				<input type = "text" name = "rg_agency" id = "rg_agency" maxlength="6"><br><br>
 				
 				<label>CPF:</label>
 				<input type = "text" name = "cpf" id = "cpf" maxlength = "15"><br><br>
@@ -86,19 +93,19 @@
 				<input type = "text" name = "cep" id = "cep"  maxlength = "10"><br><br>
 				
 				<label>Logradouro:</label>
-				<input type = "text" name = "address" id = "address" maxlength = "100" disabled data-cep="logradouro"><br><br>
+				<input type = "text" name = "address" id = "address" maxlength = "100"  readonly="true" data-cep="logradouro"><br><br>
 				
 				<label>Bairro:</label>
-				<input type = "text" name = "neighborhood" id = "neighborhood" maxlength = "100" disabled data-cep="bairro"><br><br>
+				<input type = "text" name = "neighborhood" id = "neighborhood" maxlength = "100"  readonly="true" data-cep="bairro"><br><br>
 				
 				<label>Nº:</label>
 				<input type = "text" name = "residence" id = "residence" maxlength = "6"><br><br>
 				
 				<label>Cidade:</label>
-				<input type = "text" name = "city" id = "city" maxlength = "50" disabled data-cep="cidade"><br><br>
+				<input type = "text" name = "city" id = "city" maxlength = "50"  readonly="true" data-cep="cidade"><br><br>
 				
 				<label>Estado:</label>
-				<input type = "text" name = "state" id = "state" maxlength = "2" disabled data-cep="uf"><br><br>
+				<input type = "text" name = "state" id = "state" maxlength = "2"  readonly="true" data-cep="uf"><br><br>
 						
 				<label>Complemento:</label>
 				<input type = "text" name = "complement" id = "complement" maxlength = "50"><br><br>

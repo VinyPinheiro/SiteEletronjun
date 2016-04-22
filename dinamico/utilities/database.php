@@ -26,7 +26,6 @@ class Database{
 		
 		if(mysqli_connect_errno()){
 			throw new DatabaseException("Connection failed", 1);
-			return false;
 		}
 		
 		else
@@ -51,6 +50,11 @@ class Database{
 	public function disconnect(){
 		
 		$this->connection->close();
+	}
+	
+	public function insert_id(){
+		
+		return $this->connection->insert_id;
 	}
 }
 
