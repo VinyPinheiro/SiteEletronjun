@@ -17,7 +17,7 @@
 </head>
 
 <body>
-		<form id="register" name="register" onSubmit="authenticate()">
+		<form id="register" name="register" onSubmit="authenticate()" action="utilities/register.php" method="POST">
 			
 			<fieldset>
 				<legend>Cargo</legend>
@@ -44,12 +44,19 @@
 				
 				<label>Nome Visível:</label>
 				<input type = "text" name = "nick" id = "nick" maxlength = "30"><br><br>
+				
+				<legend>Sexo:</legend>
+				<input type = "radio" name = "sex" id = "sex" value="M" checked>Masculino<br>
+				<input type = "radio" name = "sex" id = "sex" value="F">Feminino<br>
 							
 				<label>Data de Nascimento:</label>
 				<input type="text" name="birth_date" id="birth_date" onblur="validate_birthDate(birth_date)"/><br><br>
 				
 				<label>RG:</label>
 				<input type = "text" name = "rg" id = "rg"><br><br>
+				
+				<label>Orgão Emissor:</label>
+				<input type = "text" name = "rg" id = "rg" maxlength="6"><br><br>
 				
 				<label>CPF:</label>
 				<input type = "text" name = "cpf" id = "cpf" maxlength = "15"><br><br>
@@ -82,19 +89,19 @@
 				<input type = "text" name = "address" id = "address" maxlength = "100" disabled data-cep="logradouro"><br><br>
 				
 				<label>Bairro:</label>
-				<input type = "text" name = "address" id = "address" maxlength = "100" disabled data-cep="bairro"><br><br>
+				<input type = "text" name = "neighborhood" id = "neighborhood" maxlength = "100" disabled data-cep="bairro"><br><br>
+				
+				<label>Nº:</label>
+				<input type = "text" name = "residence" id = "residence" maxlength = "6"><br><br>
 				
 				<label>Cidade:</label>
 				<input type = "text" name = "city" id = "city" maxlength = "50" disabled data-cep="cidade"><br><br>
 				
 				<label>Estado:</label>
 				<input type = "text" name = "state" id = "state" maxlength = "2" disabled data-cep="uf"><br><br>
-				
-				<label>Nº:</label>
-				<input type = "text" name = "house_number" id = "house_number" maxlength = "6"><br><br>
-				
+						
 				<label>Complemento:</label>
-				<input type = "text" name = "complement" id = "complement" maxlength = "200"><br><br>
+				<input type = "text" name = "complement" id = "complement" maxlength = "50"><br><br>
 			</fieldset>
 					
 			<input type="submit" value="Cadastrar"/>
