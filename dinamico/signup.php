@@ -110,8 +110,11 @@
 				<label>Complemento:</label>
 				<input type = "text" name = "complement" id = "complement" maxlength = "50"><br><br>
 			</fieldset>
-					
+			
+			<input type="checkbox" name="accept_terms" id="accept_terms">
+			<label for="accept_terms">Eu confirmo a veracidade das informações fornecidas neste formulário, as quais podem ser usadas no âmbito de trabalho da EletronJun - Engenharia Eletrônica Júnior, de acordo com o grau de minha participação nas atividades da empresa.</label><br>					
 			<input type="submit" value="Cadastrar"/>
+			
 		</form>		
 </body>
 </html>

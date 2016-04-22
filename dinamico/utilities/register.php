@@ -70,7 +70,7 @@
 			
 		}
 		
-		echo "Salvo com sucesso, volte sempre";
+		echo "Solicitação de cadastro enviada com sucesso.";
 		
 		$data->disconnect();
 	}
