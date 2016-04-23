@@ -56,6 +56,8 @@ class Database{
 		
 		return $this->connection->insert_id;
 	}
+
+
 }
 
 class DatabaseException extends Exception{

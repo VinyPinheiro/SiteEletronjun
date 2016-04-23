@@ -24,7 +24,7 @@
 </head>
 
 <body>
-		<form id="register" name="register" onSubmit="authenticate()" action="utilities/register.php" method="POST">
+		<form id="register" name="register" onSubmit="authenticate()" action="utilities/register.php" method="POST" enctype="multipart/form-data">
 			
 			<fieldset>
 				<legend>Cargo</legend>
@@ -111,8 +111,14 @@
 				<input type = "text" name = "complement" id = "complement" maxlength = "50"><br><br>
 			</fieldset>
 			
+			<fieldset>
+				<legend>Foto de Perfil</legend>
+				<input type="file" name="profilePicture" id="profilePicture" accept="image/*"><br>
+			</fieldset>
+
 			<input type="checkbox" name="accept_terms" id="accept_terms">
-			<label for="accept_terms">Eu confirmo a veracidade das informações fornecidas neste formulário, as quais podem ser usadas no âmbito de trabalho da EletronJun - Engenharia Eletrônica Júnior, de acordo com o grau de minha participação nas atividades da empresa.</label><br>					
+			<label for="accept_terms">Eu confirmo a veracidade das informações fornecidas neste formulário, as quais podem ser usadas no âmbito de trabalho da EletronJun - Engenharia Eletrônica Júnior, de acordo com o grau de minha participação nas atividades da empresa.</label><br>
+
 			<input type="submit" value="Cadastrar"/>
 			
 		</form>		

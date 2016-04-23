@@ -197,6 +197,12 @@ $(document).ready(function(){
 			},
 			phone: {
 				required: true
+			},
+			profilePicture: {
+				required: true,
+			},
+			accept_terms: {
+				required: true
 			}
 		}
 	});
